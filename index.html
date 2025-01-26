@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- <div> element that contains the document -->
+    <div class="calc-overall">
+      <!-- <div> element to represent the calculator -->
+      <div class="calc-main">
+        <!-- <form> element used for <textarea> element -->
+        <form action="" class="calc-btn-form">
+          <!-- <div> element to represent calculator screen -->
+          <div class="screen">
+            <!-- <textarea> element to display input and output -->
+            <textarea name="calculator-screen" id="calc-screen" rows="3" maxlength="60" autofocus></textarea>
+          </div>
+          <!-- <div> element that contains calculator buttons -->
+          <div class="calc-btn-div">
+            <!-- <div> element that contains the first line of buttons -->
+            <div class="btn-line" id="btn-line-1">
+              <!-- <button> element for "C" -->
+              <button class="calc-btn clear-btn" type="button" value="C">C</button>
+              <!-- <button> element for "CE" -->
+              <button class="calc-btn clear-entry-btn" type="button" value="CE">CE</button>
+              <!-- <button> element for "(" -->
+              <button class="calc-btn bracket-btn" type="button" value="("> ( </button>
+              <!-- <button> element for ")" -->
+              <button class="calc-btn bracket-btn" type="button" value=")"> ) </button>
+              <!-- <button> element for "%" -->
+              <button class="calc-btn oper-btn" type="button" value="%">%</button>
+              <!-- <button> element for "=" -->
+              <button class="calc-btn equal-btn" type="button" value="=">=</button>
+            </div>
+
+            <!-- <div> element that contains the second line of buttons -->
+            <div class="btn-line">
+              <!-- <button> element for "7" -->
+              <button class="calc-btn num-btn"  type="button" value="7">7</button>
+              <!-- <button> element for "8" -->
+              <button class="calc-btn num-btn" type="button" value="8">8</button>
+              <!-- <button> element for "9" -->
+              <button class="calc-btn num-btn" type="button" value="9">9</button>
+              <!-- <button> element for "/" -->
+              <button class="calc-btn oper-btn" type="button" value="/">/</button>
+            </div>
+
+            <!-- <div> element that contains the third line of buttons -->
+            <div class="btn-line">
+              <!-- <button> element for "4" -->
+              <button class="calc-btn num-btn" type="button" value="4">4</button>
+              <!-- <button> element for "5" -->
+              <button class="calc-btn num-btn" type="button" value="5">5</button>
+              <!-- <button> element for "6" -->
+              <button class="calc-btn num-btn" type="button" value="6">6</button>
+              <!-- <button> element for "*" -->
+              <button class="calc-btn oper-btn" type="button" value="*">*</button>
+            </div>
+
+            <!-- <div> element that contains the fourth line of buttons -->
+            <div class="btn-line">
+              <!-- <button> element for "1" -->
+              <button class="calc-btn num-btn" type="button" value="1">1</button>
+              <!-- <button> element for "2" -->
+              <button class="calc-btn num-btn" type="button" value="2">2</button>
+              <!-- <button> element for "3" -->
+              <button class="calc-btn num-btn" type="button" value="3">3</button>
+              <!-- <button> element for "-" -->
+              <button class="calc-btn oper-btn" type="button" value="-">-</button>
+            </div>
+
+            <!-- <div> element that contains the fifth line of buttons -->
+            <div class="btn-line">
+              <!-- <button> element for "0" -->
+              <button class="calc-btn num-btn" type="button" value="0">0</button>
+              <!-- <button> element for "." -->
+              <button class="calc-btn dec-btn" type="button" value=".">.</button>
+              <!-- <button> element for "+/-" -->
+              <button class="calc-btn sign-btn" type="button" value="+/-">+/-</button>
+              <!-- <button> element for "+" -->
+              <button class="calc-btn oper-btn" type="button" value="+">+</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+

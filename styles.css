@@ -1,0 +1,153 @@
+
+/* set body width and height as reference to all other elements */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(212, 50%, 95%);
+}
+
+
+/* class for container element that contains the document; give it a flexbox layout */
+.calc-overall{
+   width: 25%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+/* class for container element for calculator; give it a flexbox layout; give a background color */
+.calc-main{
+   width: 100%; 
+   height: 80%;
+   position: relative;
+   top: 10%;
+   display: flex;
+   justify-content: center;
+   border-radius: 30px;
+   background: linear-gradient(0deg, hsl(220, 100%, 80%), hsl(220, 50%, 90%), hsl(220, 100%, 80%));              
+}
+
+/* class for form element calculator buttons and textarea element */
+.calc-btn-form{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* class for container element that contains the textarea element used for display */
+.screen{
+   width: 83%;
+   height: 20%;
+   background-color: white;
+   position: absolute;
+   top: 11%;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;  
+}
+
+/* id for textarea element used as calculator display; give it a right text alignment; set resize property to none to ensure a fixed size */
+#calc-screen{   
+   width: 90%;
+   height: 100%;
+   resize: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   text-align: right;
+   font-size: 1.5rem;
+   font-family: 'Lucida Sans';
+   box-sizing: border-box;
+   border: none; 
+   user-select: none;
+}
+/* styling for textarea element when focussed; set visibility as none to hide the textarea outline when focussed */
+#calc-screen:focus{
+    visibility: hidden;
+}
+
+/* class for container element that contains the calculator buttons; give it a flexbox layout to position and space the buttons properly */
+.calc-btn-div{
+   position: absolute;
+   top: 38%;
+   width: 90%;
+   height: 55%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+/* class for container elements that contain a row of buttons */
+.btn-line{
+   width: 90%;
+   height: 13%;
+   display: flex;
+   justify-content: space-between;
+}
+/* id for container element that contains the first row of buttons*/
+#btn-line-1{
+   width: 90%;
+   height: 13%;
+   display: flex;
+   justify-content: space-between;
+}
+
+/* class for button element used as calculator button */
+.calc-btn{
+   width: 13%;
+   height: 100%;
+   background-color: hsla(210, 20%, 98%, 0.999);
+   border-style: none;
+   border-radius: 10px;
+   box-shadow: rgb(102, 126, 172) 2px 2px;
+   font-size: 1.2rem;
+   font-family: 'Lucida Sans';
+   user-select: none;
+}
+
+/* styling for first row buttons */
+#btn-line-1 .calc-btn{
+   width: 13%;
+   height: 100%;
+}
+
+/* class for 'equal' button; give it a different background-color from others */
+.equal-btn{
+   background-color: hsl(220, 80%, 50%);
+}
+
+/* styling for button elements when hovered with mouse; give it a darker background-color and set cursor property to pointer */
+.calc-btn:hover{
+   cursor: pointer;
+   transition: background-color 0.5s ease-in-out;
+   background-color: hsla(210, 20%, 90%, 0.999);   
+}
+
+/* styling for 'equal' button when hovered; give it a darker background-color */
+.equal-btn:hover{
+   transition: background-color 0.5s ease-in-out;
+   background-color: hsla(220, 80%, 43%);
+}
+/* styling for button elements when clicked; give it a box-shadow and decrease the size to give a pressed effect */
+.calc-btn:active{
+   transition: transform 1s step-start, box-shadow 1s step-start; 
+   transform: scale(0.94);
+   box-shadow: rgb(102, 126, 172) -2px -2px;
+}
+
+
+
